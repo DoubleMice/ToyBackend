@@ -1,0 +1,22 @@
+package mariadb
+const (
+	DBAddr = "127.0.0.1"
+	DBPort = "3306"
+	DBName = ""
+	DBUser = "root"
+	DBPass = ""
+	
+	// (userId,quizResult)
+	UserTable = "user"
+	// (userA,userMatchTarget)
+	PairTable = "pair"
+	// (from,to,createTime,msgType,msgContent,deleted)
+	MsgTable = "msg"
+
+	// total quiz,max 64
+	QuizNumber = 10
+
+	AppId = ""
+	AppSecret = ""
+	Code2SessionAPI = "https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=%s"
+)
